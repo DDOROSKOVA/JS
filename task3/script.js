@@ -7,3 +7,21 @@ function makeGreen() {
 }
 
 trafficLightEl.addEventListener('click', makeGreen);
+
+function makeYellow() {    
+    trafficLightEl.style.background = ('yellow');
+    trafficLightEl.removeEventListener('click', makeYellow);
+    trafficLightEl.addEventListener('click', makeRed);
+}
+
+
+function makeRed() {
+    trafficLightEl.style.background = ('red');
+    trafficLightEl.removeEventListener('click', makeRed);
+}
+
+
+
+
+
+
